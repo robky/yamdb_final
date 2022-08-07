@@ -11,7 +11,7 @@ Python 3.7
 Django 2.2.16
 Django Rest Framework 3.12.4
 
-https://github.com/robky/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![example branch parameter](https://github.com/robky/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Как запустить проект:
 
