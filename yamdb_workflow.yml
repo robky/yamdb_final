@@ -1,4 +1,4 @@
-name: Django-app workflow
+name: YamDB workflow
 
 on: [push]
 
@@ -56,7 +56,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           sudo docker-compose stop
-          sudo docker-compose rm web -f
+          sudo docker-compose rm -f web
           sudo docker rmi $(sudo docker images 'robky/yamdb_final' -q)
           rm .env
           touch .env
