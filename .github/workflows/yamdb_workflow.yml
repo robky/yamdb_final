@@ -57,7 +57,7 @@ jobs:
         script: |
           sudo docker-compose stop
           sudo docker-compose rm web -f
-          sudo docker image rm $(sudo docker image ls -aq)
+          sudo docker rmi $(sudo docker images 'robky/yamdb_final' -q)
           rm .env
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
